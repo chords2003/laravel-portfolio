@@ -5,7 +5,7 @@
     <h1>Contact Us</h1>
     <p>If you have any questions, feel free to reach out to us using the form below.</p>
 
-    <form action="{{ route('contact.submit') }}" method="POST">
+    <form action="{{ route('projects.contact') }}" method="POST">
         @csrf
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
