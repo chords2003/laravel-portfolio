@@ -1,22 +1,25 @@
 @extends('layouts.app')
 
-@section('content')
-<div class="container">
-    <h1>Contact Us</h1>
-    <p>If you have any questions, feel free to reach out to us using the form below.</p>
 
-    <form action="{{ route('projects.contact') }}" method="POST">
-        @csrf
-        <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" name="name" required>
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-        </div>
-        <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send Message</button>
+@section('scripts')
+<script>
+    // Add any JavaScript you need for the contact form here
+</script>
+@endsection
+@section('styles')
+<style>
+    /* Add any custom styles for the contact form here */
+    .container {
+        max-width: 600px;
+        margin: auto;
+    }
+    .form-label {
+        font-weight: bold;
+    }
+    .form-control {
+        border-radius: 5px;
+    }
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
